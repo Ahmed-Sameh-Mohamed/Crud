@@ -1,0 +1,50 @@
+<html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="w-50 m-auto my-5 shadow-lg p-5">
+
+        <h2>CRUD SYSTEM</h2>
+
+        <label for="ProductName" class="my-3">ProductName</label>
+        <input type="text" class="form-control" id="ProductName">
+
+        <label for="ProductCategory" class="my-3">ProductCategory</label>
+        <input type="text" class="form-control" id="ProductCategory">
+
+        <label for="ProductPrice" class="my-3">ProductPrice</label>
+        <input type="text" class="form-control" id="ProductPrice">
+
+        <label for="ProductDescription" class="my-3">ProductDescription</label>
+        <textarea  id="ProductDescription" class="form-control" cols="30" rows="2"></textarea>
+
+        <button onclick="addproduct()" class="btn btn-lg my-3 w-25  btn-outline-info">Add</button>
+
+    </div>
+
+     <div class="w-50 my-5 m-auto shadow">
+        <input id="searchInput" onkeyup="search()" class="form-control w-50 mx-auto my-5" type="text">
+        <table class="table table-striped table-hover">
+            <thead>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Delete</th>
+                <th>Update</th>
+            </thead>
+            <tbody id="Emoo">
+               
+            </tbody>
+        </table>
+    </div>
+    
+
+    <script src="js/main.js"></script>
+</body>
+</html>
